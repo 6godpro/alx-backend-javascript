@@ -1,4 +1,4 @@
-import { uploadPhoto, createUser } from "./utils";
+import { uploadPhoto, createUser } from './utils';
 
 module.exports = function handleProfileSignup() {
   Promise.all([uploadPhoto(), createUser()]).then((values) => {
