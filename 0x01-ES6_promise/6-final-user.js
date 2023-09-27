@@ -9,11 +9,11 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
     const res = [];
 
     results.forEach((result) => {
-        if (result.status === 'fulfilled') {
-            res.push({ status: result.status, value: result.value });
-        } else if (result.status === 'rejected') {
-            res.push({ status: result.status, value: result.reason })
-        }
+      if (result.status === 'fulfilled') {
+        res.push({ status: result.status, value: result.value });
+      } else if (result.status === 'rejected') {
+        res.push({ status: result.status, value: result.reason });
+      }
     });
     return res;
   });
